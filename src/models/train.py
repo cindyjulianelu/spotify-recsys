@@ -48,11 +48,11 @@ def _print_metrics(metrics: dict) -> None:
 
 def _demo(rec: TrackRecommender, df: pd.DataFrame, random_state: int = 42) -> None:
     sample = df.sample(1, random_state=random_state).iloc[0]
-    print(f"\n  Query track:")
+    print("\n  Query track:")
     print(f"    {sample['track_name']} — {sample['artists']} [{sample['track_genre']}]")
     try:
         recs = rec.recommend_by_name(sample["track_name"], k=5)
-        print(f"\n  Top-5 recommendations:")
+        print("\n  Top-5 recommendations:")
         for _, row in recs.iterrows():
             print(
                 f"    [{row['similarity']:.3f}]  {row['track_name']} "
@@ -109,7 +109,7 @@ def run() -> None:
     np.save(EMBEDDINGS_PATH, embeddings)
     rec_path = rec.save()
 
-    print(f"\n  Saved:")
+    print("\n  Saved:")
     print(f"    classifier   → {clf_path}")
     print(f"    embeddings   → {EMBEDDINGS_PATH}")
     print(f"    recommender  → {rec_path}")

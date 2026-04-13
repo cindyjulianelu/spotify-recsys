@@ -159,7 +159,7 @@ def _print_analysis(results: pd.DataFrame) -> None:
     print(results.to_string())
     print(f"{'─'*80}")
     print(f"\n  Random baseline (114-class uniform): {RANDOM_BASELINE*100:.2f}%")
-    print(f"  vs_random = test_accuracy ÷ random baseline\n")
+    print("  vs_random = test_accuracy ÷ random baseline\n")
 
     best = results["test_accuracy"].idxmax()
     best_acc = results.loc[best, "test_accuracy"]

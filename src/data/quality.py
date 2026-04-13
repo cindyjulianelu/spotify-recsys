@@ -335,13 +335,13 @@ def _print_report(report: dict) -> None:
 
     oob = stats.get("out_of_bounds_by_column")
     if oob:
-        print(f"\n  Out-of-bounds columns:")
+        print("\n  Out-of-bounds columns:")
         for col, counts in oob.items():
             print(f"    {col:<25}  below={counts['below']:,}  above={counts['above']:,}")
 
     nulls = stats.get("total_nulls_by_column")
     if nulls:
-        print(f"\n  Null counts:")
+        print("\n  Null counts:")
         for col, n in nulls.items():
             pct = n / stats["total_rows"] * 100
             print(f"    {col:<25}  {n:>6,}  ({pct:.2f}%)")

@@ -273,7 +273,7 @@ if __name__ == "__main__":
     df_sel, selected, log = select_features(df_eng)
     elapsed = time.time() - t0
 
-    print(f"\nFeature selection log:")
+    print("\nFeature selection log:")
     for entry in log:
         print(f"  - {entry}")
 

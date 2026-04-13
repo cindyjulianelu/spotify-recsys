@@ -148,12 +148,12 @@ if __name__ == "__main__":
     X_train, y_train, _ = build_features(train_df)
     X_test,  y_test,  _ = build_features(test_df)
 
-    print(f"\nTraining baselines...")
+    print("\nTraining baselines...")
     t0 = time.time()
     models = train_baselines(X_train, y_train)
     elapsed = time.time() - t0
 
-    print(f"\nEvaluating (5-fold CV + test set)...")
+    print("\nEvaluating (5-fold CV + test set)...")
     results = evaluate_baselines(models, X_train, y_train, X_test, y_test)
 
     print(f"\n{results.to_string()}")

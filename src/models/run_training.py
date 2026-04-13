@@ -43,12 +43,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 import joblib
 import mlflow
-import numpy as np
 import pandas as pd
 import lightgbm as lgb
-from sklearn.dummy import DummyClassifier
-from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import accuracy_score, f1_score, top_k_accuracy_score
 
 from features.engineer import build_features, split
 from baseline import train_baselines, evaluate_baselines
@@ -252,10 +248,10 @@ def _print_summary(
         sign = "+" if delta >= 0 else ""
         print(f"    Tuning gain          : {sign}{delta*100:.2f}pp over default LightGBM")
 
-    print(f"\n  View all runs:")
-    print(f"    mlflow ui --port 5001")
-    print(f"    → open http://localhost:5001")
-    print(f"\n  Production model saved to: models/production_model.pkl")
+    print("\n  View all runs:")
+    print("    mlflow ui --port 5001")
+    print("    → open http://localhost:5001")
+    print("\n  Production model saved to: models/production_model.pkl")
     print(f"\n{'='*60}\n")
 
 

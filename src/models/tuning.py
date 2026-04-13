@@ -237,7 +237,7 @@ if __name__ == "__main__":
     tuned_model = train_tuned(X_train, y_train, best_params)
     metrics = evaluate_tuned(tuned_model, X_test, y_test, default_accuracy=default_acc)
 
-    print(f"\n  Final model metrics:")
+    print("\n  Final model metrics:")
     print(f"    Accuracy (top-1) : {metrics['accuracy']:.4f}")
     print(f"    F1 macro         : {metrics['f1_macro']:.4f}")
     print(f"    Accuracy (top-5) : {metrics['top5_accuracy']:.4f}")
