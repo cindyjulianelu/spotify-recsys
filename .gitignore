@@ -1,0 +1,15 @@
+.claude/
+data/
+!data/sample.csv
+models/
+mlruns/
+.env
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
