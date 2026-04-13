@@ -1,8 +1,11 @@
 .claude/
-data/
-!data/sample.csv
-models/
-mlruns/
+# Root-level data/ and models/ only (leading / anchors to project root)
+# This prevents src/data/ and src/models/ from being accidentally ignored
+/data/dataset.csv
+/data/cleaned.csv
+/data/features.csv
+/models/
+/mlruns/
 .env
 __pycache__/
 .ipynb_checkpoints/
