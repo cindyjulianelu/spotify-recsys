@@ -18,7 +18,7 @@ A two-stage ML pipeline: LightGBM genre classifier → cosine-similarity nearest
 recommender. Genre probability vectors serve as musical embeddings, enabling
 cross-genre recommendations that a simple category filter cannot produce.
 
-> **Live demo:** [*Deploy to Streamlit Community Cloud and add URL here*]  
+> **Live demo:** https://tjsnuggles-spotify-recsys-proj.hf.space  
 > **Dataset:** [Spotify Tracks Dataset](https://www.kaggle.com/datasets/maharshipandya/-spotify-tracks-dataset) — Kaggle
 
 ---
