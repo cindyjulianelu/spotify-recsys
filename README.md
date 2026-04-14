@@ -3,10 +3,12 @@ title: Spotify Genre and Recommendation Engine
 emoji: 🎵
 colorFrom: green
 colorTo: black
-sdk: streamlit
-sdk_version: "1.56.0"
-app_file: app/streamlit_app.py
+sdk: docker
+app_port: 8501
+tags:
+- streamlit
 pinned: false
+short_description: Genre classifier + cosine-similarity recommendation engine
 ---
 
 # Spotify Genre & Recommendation Engine
