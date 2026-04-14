@@ -2,7 +2,7 @@
 title: Spotify Genre and Recommendation Engine
 emoji: 🎵
 colorFrom: green
-colorTo: black
+colorTo: gray
 sdk: docker
 app_port: 8501
 tags:
