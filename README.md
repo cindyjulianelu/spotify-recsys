@@ -1,3 +1,14 @@
+---
+title: Spotify Genre and Recommendation Engine
+emoji: 🎵
+colorFrom: green
+colorTo: black
+sdk: streamlit
+sdk_version: "1.56.0"
+app_file: app/streamlit_app.py
+pinned: false
+---
+
 # Spotify Genre & Recommendation Engine
 
 **Content-based track recommender for 113,000+ Spotify tracks across 114 genres.**  
